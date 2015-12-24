@@ -5,7 +5,7 @@
 }
 
 @section scripts{
-  
+
 }
 
 <h1>@ViewBag.Title</h1>
@@ -18,46 +18,41 @@
             Создать метод в контроллере, формирующий json следующего формата:
             <pre>
 {
-    bindto : "#chart-votes",
-    data : {
-        x : "date",
-        json :[
-            {
-                date:"2015-11-19",
-                data1:"2"
-            },
-            {
-                date:"2015-11-20",
-                data1:"4"
-            }
-        ]
-        keys : {
-            x :  "date",
-            value : ["data1"]
+    bindto : "#chart",
+    data:{
+        x:"date",
+        json:[
+            {date:"2015-11-19",data1:2},
+            {date:"2015-11-20",data1:4}
+        ],
+        keys:{
+            x:"date",
+            value:["data1"]
         },
-        names : {
-            data1 : "Количество проголосовавших людей"
+        names:{
+            data1:"Количество проголосовавших людей"
         }
     },
-    axis : {
-        x :
-        {
-            type : "timeseries",
-            tick : {
-                format = "%d.%m.%Y"
+    axis:{
+        x:{
+            type:"timeseries",
+            tick:{
+                format:"%d.%m.%Y"
             }
         }
     }
 }
 </pre>
         </li>
-        <li>написать метод на js. По нажаьтю на кнопку получать этот json с контроллера и выводить в консоль</li>
+        <li>написать метод на js. По нажаьтю на кнопку получать этот json с контроллера и вызвать метод <b>c3.generate(СЮДА JSON);</b></li>
     </ol>
-   
+
 
     <button class="btn btn-primary">Получить JSON</button>
 
+    <div id="chart"></div>
     
+
 
 </div>
 
