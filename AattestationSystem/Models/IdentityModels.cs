@@ -29,5 +29,8 @@ namespace AattestationSystem.Models
         {
             return new ApplicationDbContext();
         }
+
+
+        public DbSet<Employee> Employees { get; set; }
     }
 }
