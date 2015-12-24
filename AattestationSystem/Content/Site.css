@@ -22,3 +22,8 @@ select,
 textarea {
     max-width: 280px;
 }
+
+
+.tests-nav{
+    margin-top:20px;
+}

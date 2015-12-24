@@ -1,0 +1,19 @@
+﻿
+
+<div class="tests-nav">
+
+    @if (ViewBag.PrevTestAction != null)
+    {
+        @Html.ActionLink("Предыдущий тест", (string)ViewBag.PrevTestAction)
+        <text> | </text>
+    }
+    
+    @Html.ActionLink("В оглавление", "Index")
+
+    @if (ViewBag.NextTestAction != null)
+    {
+        <text> | </text>
+        @Html.ActionLink("Следующий тест", (string)ViewBag.NextTestAction)
+    }
+   
+</div>

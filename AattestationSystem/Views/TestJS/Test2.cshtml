@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewBag.Title = "Тест 2 - Отправка асинхронных запросов";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section scripts{
+  
+}
+
+<h1>@ViewBag.Title</h1>
+
+
+<div class="static-container">
+    <h3>Задача</h3>
+    <ol>
+        <li>Создать метод в контроллере, принимающий int и возвращающий int*2</li>
+        <li>написать метод на js, по нажаьтю на кнопку, отправляющий значение из первого инпута и кладущий результат во второй</li>
+    </ol>
+   
+
+    <input type="text" placeholder="Сюда вести число">
+    <button class="btn btn-primary">Умножить на 2</button>
+    <input type="text" placeholder="Тут вывести резальтат умножения">
+
+    
+
+</div>
+
+@Html.Partial("_PartialTestsNavigation")
+
