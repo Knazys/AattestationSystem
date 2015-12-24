@@ -240,6 +240,7 @@
     <Content Include="Views\TestJS\Index.cshtml" />
     <Content Include="Views\Shared\_PartialTestsNavigation.cshtml" />
     <Content Include="Views\TestJS\Test2.cshtml" />
+    <Content Include="Views\TestJS\Test3.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

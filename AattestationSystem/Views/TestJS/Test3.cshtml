@@ -1,0 +1,65 @@
+﻿
+@{
+    ViewBag.Title = "Тест 3 - Формирование JSON вручную на сервере и вывод в консоль";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section scripts{
+  
+}
+
+<h1>@ViewBag.Title</h1>
+
+
+<div class="static-container">
+    <h3>Задача</h3>
+    <ol>
+        <li>
+            Создать метод в контроллере, формирующий json следующего формата:
+            <pre>
+{
+    bindto : "#chart-votes",
+    data : {
+        x : "date",
+        json :[
+            {
+                date:"2015-11-19",
+                data1:"2"
+            },
+            {
+                date:"2015-11-20",
+                data1:"4"
+            }
+        ]
+        keys : {
+            x :  "date",
+            value : ["data1"]
+        },
+        names : {
+            data1 : "Количество проголосовавших людей"
+        }
+    },
+    axis : {
+        x :
+        {
+            type : "timeseries",
+            tick : {
+                format = "%d.%m.%Y"
+            }
+        }
+    }
+}
+</pre>
+        </li>
+        <li>написать метод на js. По нажаьтю на кнопку получать этот json с контроллера и выводить в консоль</li>
+    </ol>
+   
+
+    <button class="btn btn-primary">Получить JSON</button>
+
+    
+
+</div>
+
+@Html.Partial("_PartialTestsNavigation")
+

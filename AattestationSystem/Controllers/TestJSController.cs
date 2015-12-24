@@ -28,5 +28,13 @@ namespace AattestationSystem.Controllers
             ViewBag.NextTestAction = "Test3";
             return View();
         }
+
+
+        public ActionResult Test3()
+        {
+            ViewBag.PrevTestAction = "Test2";
+            ViewBag.NextTestAction = "Test4";
+            return View();
+        }
     }
 }
