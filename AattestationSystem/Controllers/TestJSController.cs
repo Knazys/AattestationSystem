@@ -48,5 +48,15 @@ namespace AattestationSystem.Controllers
             ViewBag.NextTestAction = "Test5";
             return View();
         }
+
+
+        public ActionResult Test5()
+        {
+            //using(ApplicationDbContext db = new ApplicationDbContext())
+            //{
+            //}
+            ViewBag.PrevTestAction = "Test4";
+            return View();
+        }
     }
 }

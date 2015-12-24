@@ -247,6 +247,7 @@
     <Content Include="Views\TestJS\Test2.cshtml" />
     <Content Include="Views\TestJS\Test3.cshtml" />
     <Content Include="Views\TestJS\Test4.cshtml" />
+    <Content Include="Views\TestJS\Test5.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
