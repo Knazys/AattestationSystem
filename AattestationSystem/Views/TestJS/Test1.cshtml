@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewBag.Title = "Тест 1 - Добавление обработчика событий";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section scripts{
+<script src="~/Scripts/TestJS/test1.js"></script>    
+}
+
+<h1>@ViewBag.Title</h1>
+
+
+<div class="static-container">
+    <p>Первый текст со времененм обновляется каждую секунду. По нажатию на кнопку, он должен продублироваться во втором тексте</p>
+    <div class="async-container">
+
+        <p>qwe</p>
+        <button class="btn btn-primary">Вывести текст</button>
+
+    </div>
+
+    <br />
+    <br />
+    <p>Сюда нужно вывводить текст со временем по нажатию кнопки</p>
+
+</div>
+
